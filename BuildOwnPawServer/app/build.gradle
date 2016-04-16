@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 8
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "de.fun2code.android.buildownpawserver"
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/brazil.jar')
+    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/bsh-2.1.8.jar')
+    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/commons-codec.jar')
+    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/jdom-android.jar')
+    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/paw-server.jar')
+}
