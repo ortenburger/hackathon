@@ -11,41 +11,11 @@ angular.module('app.routes', [])
   
 
       .state('menu.home', {
-    url: '/page1',
+    url: '/page2',
     views: {
       'side-menu21': {
         templateUrl: 'templates/home.html',
         controller: 'homeCtrl'
-      }
-    }
-  })
-
-  .state('menu.createRoom', {
-    url: '/page2',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/createRoom.html',
-        controller: 'createRoomCtrl'
-      }
-    }
-  })
-
-  .state('menu.positioningLights', {
-    url: '/page3',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/positioningLights.html',
-        controller: 'positioningLightsCtrl'
-      }
-    }
-  })
-
-  .state('menu.teachCurrentPosition', {
-    url: '/page4',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/teachCurrentPosition.html',
-        controller: 'teachCurrentPositionCtrl'
       }
     }
   })
@@ -80,13 +50,23 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('menu.configuration', {
+    url: '/page8',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/configuration.html',
+        controller: 'configurationCtrl'
+      }
+    }
+  })
+
   .state('menu', {
     url: '/side-menu21',
     templateUrl: 'templates/menu.html',
     abstract:true
   })
 
-$urlRouterProvider.otherwise('/side-menu21/page1')
+$urlRouterProvider.otherwise('/side-menu21/page2')
 
   
 

@@ -4,18 +4,6 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('createRoomCtrl', function($scope) {
-
-})
-   
-.controller('positioningLightsCtrl', function($scope) {
-
-})
-   
-.controller('teachCurrentPositionCtrl', function($scope) {
-
-})
-   
 .controller('wakeUpAlarmCtrl', function($scope) {
 
 })
@@ -25,6 +13,10 @@ angular.module('app.controllers', [])
 })
    
 .controller('lightMusicCtrl', function($scope) {
+
+})
+   
+.controller('configurationCtrl', function($scope) {
 
 })
     
