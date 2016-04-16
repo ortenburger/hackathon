@@ -5,10 +5,10 @@ Requirements:
 [ ] set lightcolor whether to take an umbrella (alarm with leaving flat)
 [ ] light follows the person through the flat
 [ ] wakeup with light and prevent jetlag
+[ ] LightWarning if CO2 is too high
 
 Backend:
 [ ] CloudRail to connect weatherdata
-[ ] CloudRail to store weatherdata
 [ ] CloudRail to set Philips Hue Lights
 [ ] API to frontend
 [ ] API to get VRN data (oeffentlichen)
