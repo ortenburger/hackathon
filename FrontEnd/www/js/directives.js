@@ -1,13 +1,13 @@
 angular.module('app.directives', ['d3'])
 
-.directive('d3Line', ['d3Service', function(d3Service){
+.directive('d3Line', ['d3Service', '$log', function(d3Service,$log){
   return {
         restrict: 'EA',
         scope: {},
         link: function(scope, element, attrs) {
           d3Service.d3().then(function(d3) {
             var line;
-
+            var roomJson;
             var vis = d3.select(element[0]).append("svg")
               .attr("width", 600)
               .attr("height", 400)
@@ -51,7 +51,18 @@ angular.module('app.directives', ['d3'])
               e = e || window.event;
               e.stopPropagation();
               vis.on("mousemove", null);
+
+              vis.selectAll('line').each(function(d,i) {
+                  var line=d3.select(this);
+                  $log.debug(line.attr('x1')+'/'+line.attr('y1')+' - '+line.attr('x2')+'/'+line.attr('y2'));
+              });
+
             }
+
+   //         roomJson = { "room" : [{
+   //             "id": "1",
+   //             "name": "room",
+   //             "dimensions": {<int>,<int>,...,<int>},
           });
         }}
 }]);
