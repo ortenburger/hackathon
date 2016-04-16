@@ -13,7 +13,7 @@ angular.module('app.directives', ['d3'])
               .attr("height", 400)
               .attr("class", "svg")
               .on("mousedown", mousedown)
-              .on("mouseup", mouseup);
+              .on("mouseup", null);
 
             for(var i=0;i<31;i++) {
               for(var j=0;j<21;j++) {
@@ -28,14 +28,16 @@ angular.module('app.directives', ['d3'])
             function mousedown(e) {
               e = e || window.event;
               e.stopPropagation();
-              var m = d3.mouse(this);
-              line = vis.append("line")
-                .attr("x1", Math.round(m[0]/20)*20)
-                .attr("y1", Math.round(m[1]/20)*20)
-                .attr("x2", Math.round(m[0]/20)*20)
-                .attr("y2", Math.round(m[1]/20)*20);
-
-              vis.on("mousemove", mousemove);
+              // var m = d3.mouse(this);
+              // line = vis.append("line")
+              //   .attr("x1", Math.round(m[0]/20)*20)
+              //   .attr("y1", Math.round(m[1]/20)*20)
+              //   .attr("x2", Math.round(m[0]/20)*20)
+              //   .attr("y2", Math.round(m[1]/20)*20);
+              //
+              // vis.on("mousemove", mousemove);
+              // vis.on("mousedown", null);
+              vis.on("mouseup", mouseup);
             }
 
             function mousemove(e) {
@@ -51,6 +53,7 @@ angular.module('app.directives', ['d3'])
               e = e || window.event;
               e.stopPropagation();
               vis.on("mousemove", null);
+              vis.on("mousedown", null);
 
               var points=[];
               vis.selectAll('line').each(function() {
@@ -62,16 +65,35 @@ angular.module('app.directives', ['d3'])
                     y2: line.attr('y2')
                   });
               });
+              if(points.length>0) {
+                var lastPoint=points[points.length-1];
+                if(lastPoint.x1==lastPoint.x2&&lastPoint.y1==lastPoint.y2) {
+                  vis.on("mousedown",mousedown);
+                  vis.on("mouseup",null);
+                  vis.selectAll("line").remove();
+                  return;
+                }
+              }
               var sanityCheck=points.length>0;
               points.forEach(function(point) {
                 sanityCheck&=point.x1!=point.x2||point.y1!=point.y2;
                 sanityCheck&=points.filter(function(point2) {
-                  return point2.x2==point.x1&&point2.y2==point.y1;
+                  return point2.x1==point.x2&&point2.y1==point.y2;
                 }).length==1;
               });
               if(sanityCheck) {
+                vis.on("mouseup",null);
                 $log.debug("Room complete:");
                 $log.debug(points);
+              }else {
+                var m = d3.mouse(this);
+                line = vis.append("line")
+                  .attr("x1", Math.round(m[0]/20)*20)
+                  .attr("y1", Math.round(m[1]/20)*20)
+                  .attr("x2", Math.round(m[0]/20)*20)
+                  .attr("y2", Math.round(m[1]/20)*20);
+
+                vis.on("mousemove", mousemove);
               }
             }
 
