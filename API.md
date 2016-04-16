@@ -39,13 +39,9 @@ Definition:
 		   }],
 		   
   "mood": [{
-	"type": <"follow","movie","music","mood">,
+	"type": <"follow","movie","music","mood","day_light">,
 	"hue": <int>,
-	"brightness": <int>
-		  }],
-		  
-  "setup_mood_type": [{
-	"type": <"follow","movie","music","mood">,
+	"brightness": <int>,
 	"tbd": "tbd"
-					 }]
+		  }]
 }
