@@ -1,41 +1,7 @@
 <ion-view title="Configuration" id="page8">
     <ion-content padding="true" class="has-header">
         <h1 id="configuration-heading5" style="color:#000000;">Creating room</h1>
-        <div id="configuration-markdown5" style="color:#000000;">
-              <script src="lib/d3/d3.js"></script>
-              <script>
-                var line;
-
-                var vis = d3.select("body").append("svg")
-                  .attr("width", 600)
-                  .attr("height", 400)
-                  .on("mousedown", mousedown)
-                  .on("mouseup", mouseup);
-
-                function mousedown() {
-                  var m = d3.mouse(this);
-                  line = vis.append("line")
-                    .attr("x1", Math.round(m[0]/50)*50)
-                    .attr("y1", Math.round(m[1]/50)*50)
-                    .attr("x2", Math.round(m[0]/50)*50)
-                    .attr("y2", Math.round(m[1]/50)*50);
-
-                  console.log(Math.round(m[0]/50)*50);
-                  console.log(Math.round(m[1]/50)*50);
-
-                  vis.on("mousemove", mousemove);
-                }
-
-                function mousemove() {
-                  var m = d3.mouse(this);
-                  line.attr("x2", Math.round(m[0]/50)*50)
-                    .attr("y2", Math.round(m[1]/50)*50);
-                }
-
-                function mouseup() {
-                  vis.on("mousemove", null);
-                }
-              </script>
+        <div d3-line id="configuration-markdown5" style="color:#000000;">
         </div>
         <h1 id="configuration-heading6" style="color:#000000;">Positioning lights</h1>
         <div id="configuration-markdown6" style="color:#000000;">
