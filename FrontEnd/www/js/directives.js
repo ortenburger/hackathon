@@ -15,7 +15,9 @@ angular.module('app.directives', ['d3'])
               .on("mousedown", mousedown)
               .on("mouseup", mouseup);
 
-            function mousedown() {
+            function mousedown(e) {
+              e = e || window.event;
+              e.stopPropagation();
               var m = d3.mouse(this);
               line = vis.append("line")
                 .attr("x1", Math.round(m[0]/50)*50)
@@ -29,14 +31,18 @@ angular.module('app.directives', ['d3'])
               vis.on("mousemove", mousemove);
             }
 
-            function mousemove() {
+            function mousemove(e) {
+              e = e || window.event;
+              e.stopPropagation();
               var m = d3.mouse(this);
               line.attr("class", "line")
                 .attr("x2", Math.round(m[0]/50)*50)
                 .attr("y2", Math.round(m[1]/50)*50);
             }
 
-            function mouseup() {
+            function mouseup(e) {
+              e = e || window.event;
+              e.stopPropagation();
               vis.on("mousemove", null);
             }
           });
