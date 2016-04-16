@@ -1,0 +1,9 @@
+svg {
+    border: 1px solid grey;
+}
+
+line {
+    stroke: steelblue;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
