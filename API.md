@@ -45,3 +45,40 @@ Definition:
 	tbd: "tbd"
 		  }]
 }
+
+########################################################################
+
+API RNV_Usage
+
+########################################################################
+
+API CloudRAIL
+
+Part A:
+Philips Hue
+
+
+Part B: 
+Netatmo
+	* -> accesstoken [string]
+	* <- device_list [array]
+	* -> identifier [string]
+	* <- list_measure [array[Co2]]
+
+Part C:
+AccuWeather
+  * GetLocationsKeyByText
+	* -> countryidentifier [string] (de)
+	* -> searchquery [string] (mannheim)
+	* -> apikey [string]
+	* <- results [array]
+  *GetDailyForecast maybe GetCurrentConditions
+	* -> apikey [string]
+	* -> forecasttime [sting] (1day)
+	* -> locationidentifier [integer[ (see results-array) or nothing
+	* <- default0 [array] or results [array]
+		* check for rain* 
+
+Part C*:
+OpenWeatherMap-API
+
