@@ -21,27 +21,27 @@ set start mode:	- follow
 				
 Definition:				
 {
-  "set_current_mode": <"follow","wake_up","movie","music","day_light">,
+  set_current_mode: <"follow","wake_up","movie","music","day_light">,
   
-  "room": [{
-    "id": "<int>",
-    "name": "<string>",
-    "dimensions": {<int>,<int>,...,<int>},
-    "user_position_list": [{"id":<int>,"x":<int>,"y"<int>}],
-    "light_position_list": [{"id":<int>,"x":<int>,"y"<int>,"active":<boolean>,"type: ["hue","boolean"]}],
+  room: [{
+    id: <int>,
+    name: "<string>",
+    dimensions: [{<x>,<y>},...,{<x>,<y>}],
+    user_position_list: [{id:<int>,x:<int>,y:<int>}],
+    light_position_list: [{id:<int>,x:<int>,y:<int>,active:<boolean>,type: ["hue","boolean"]}],
 		  }],
 		  
-  "alarm": [{
-	"id": "<int>",
-	"name": "<string>",
-    "type": {"wake_up","jetlag","inhouse","outhouse","outhouse_vrn"},
-    "time": {"JJJJ-MM-TT-HH-MM","weekly":<boolean>}
+  alarm: [{
+	id: <int>,
+	name: "<string>",
+    type: {"wake_up","jetlag","inhouse","outhouse","outhouse_vrn"},
+    time: {"JJJJ-MM-TT-HH-MM",weekly:<boolean>}
 		   }],
 		   
-  "mood": [{
-	"type": <"follow","movie","music","mood","day_light">,
-	"hue": <int>,
-	"brightness": <int>,
-	"tbd": "tbd"
+  mood: [{
+	type: <"follow","movie","music","mood","day_light">,
+	hue: <int>,
+	brightness: <int>,
+	tbd: "tbd"
 		  }]
 }
