@@ -14,7 +14,7 @@ Backend:
 [ ] API to get VRN data (oeffentlichen)
 
 Frontend:
-[ ] create room
+[x] create room
 [ ] position lightsources
 [ ] teach current position (req. 3 different pos. per room)
 [ ] wakeup with light and prevent jetlag
