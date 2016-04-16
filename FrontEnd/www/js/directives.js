@@ -52,11 +52,27 @@ angular.module('app.directives', ['d3'])
               e.stopPropagation();
               vis.on("mousemove", null);
 
+              var points=[];
               vis.selectAll('line').each(function() {
                   var line=d3.select(this);
-                  $log.debug(line.attr('x1')+'/'+line.attr('y1')+' - '+line.attr('x2')+'/'+line.attr('y2'));
+                  points.push({
+                    x1: line.attr('x1'),
+                    y1: line.attr('y1'),
+                    x2: line.attr('x2'),
+                    y2: line.attr('y2')
+                  });
               });
-
+              var sanityCheck=points.length>0;
+              points.forEach(function(point) {
+                sanityCheck&=point.x1!=point.x2||point.y1!=point.y2;
+                sanityCheck&=points.filter(function(point2) {
+                  return point2.x2==point.x1&&point2.y2==point.y1;
+                }).length==1;
+              });
+              if(sanityCheck) {
+                $log.debug("Room complete:");
+                $log.debug(points);
+              }
             }
 
    //         roomJson = { "room" : [{
