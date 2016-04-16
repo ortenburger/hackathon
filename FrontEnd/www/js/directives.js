@@ -52,7 +52,7 @@ angular.module('app.directives', ['d3'])
               e.stopPropagation();
               vis.on("mousemove", null);
 
-              vis.selectAll('line').each(function(d,i) {
+              vis.selectAll('line').each(function() {
                   var line=d3.select(this);
                   $log.debug(line.attr('x1')+'/'+line.attr('y1')+' - '+line.attr('x2')+'/'+line.attr('y2'));
               });
