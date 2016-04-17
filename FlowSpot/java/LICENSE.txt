@@ -1,0 +1,10 @@
+LICENSE
+=======
+
+Copyright licobo GmbH. All rights reserved.
+
+
+Please refer to http://cloudrail.com/imprint/terms-of-use/
+
+
+Licenses of used libraries please see THIRD_PARTY_LICENSE.txt
