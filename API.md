@@ -1,5 +1,4 @@
 API:
-http://jsonapi.org/format/
 
 Abstract:
 set/get room dimensions
