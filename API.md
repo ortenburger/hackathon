@@ -1,7 +1,6 @@
-API:
-http://jsonapi.org/format/
+# API:
 
-Abstract:
+## Abstract:
 set/get room dimensions
 set/get position phone
 set/get position light source
@@ -19,7 +18,7 @@ set start mode: - follow
                 - music
                 - all on/off
                 
-Definition:             
+## Definition:             
 {
   set_current_mode: <"follow","wake_up","movie","music","day_light">,
   
@@ -48,41 +47,37 @@ Definition:
           }]
 }
 
-########################################################################
 
-API RNV_Usage
 
-########################################################################
+## API RNV_Usage
 
-API CloudRAIL
 
-Part A:
-Philips Hue
+
+## API CloudRAIL
+
+### Part A: CloudRail Philips Hue
 If Frontend Set-PhilipsHue:
     CreateUser
-    * -> devicetype [string]#[string] ([application_name]#[devicename])
+ * -> devicetype [string]#[string] ([application_name]#[devicename])
 
-Part B: 
-Netatmo
-    * -> accesstoken [string]
-    * <- device_list [array]
-    * -> identifier [string]
-    * <- list_measure [array[Co2]]
+### Part B: CloudRail Netatmo
+ * -> accesstoken [string]
+ * <- device_list [array]
+ * -> identifier [string]
+ * <- list_measure [array[Co2]]
 
-Part C:
-AccuWeather
-  * GetLocationsKeyByText
-    * -> countryidentifier [string] (de)
-    * -> searchquery [string] (mannheim)
-    * -> apikey [string]
-    * <- results [array]
-  *GetDailyForecast maybe GetCurrentConditions
-    * -> apikey [string]
-    * -> forecasttime [sting] (1day)
-    * -> locationidentifier [integer[ (see results-array) or nothing
-    * <- default0 [array] or results [array]
-        * check for rain* 
+### Part C: CloudRail AccuWeather
+ * GetLocationsKeyByText
+  * -> countryidentifier [string] (de)
+  * -> searchquery [string] (mannheim)
+  * -> apikey [string]
+  * <- results [array]
+ *GetDailyForecast maybe GetCurrentConditions
+  * -> apikey [string]
+  * -> forecasttime [sting] (1day)
+  * -> locationidentifier [integer[ (see results-array) or nothing
+  * <- default0 [array] or results [array]
+    * check for rain* 
 
-Part C*:
-OpenWeatherMap-API
+### Part C*: OpenWeatherMap-API (not CloudRail)
 
