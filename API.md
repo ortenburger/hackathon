@@ -56,7 +56,9 @@ API CloudRAIL
 
 Part A:
 Philips Hue
-
+If Frontend Set-PhilipsHue:
+	CreateUser
+	* -> devicetype [string]#[string] ([application_name]#[devicename])
 
 Part B: 
 Netatmo
