@@ -35,6 +35,9 @@ def calc_dist(args):
 def main():
 	"""reads the CLI-Arguments
 	"""
+	if len(sys.argv)<3: 
+		print("Usage:  calc_dist_station.py langitude longitude (in float)")
+		exit()
 	calc_dist(sys.argv[1:])
 
 
