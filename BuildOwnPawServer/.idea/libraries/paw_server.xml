@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="paw-server">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../joschi/AndroidStudioProjects/BuildOwnPawServer/libs/paw-server.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
