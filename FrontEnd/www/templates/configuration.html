@@ -1,11 +1,13 @@
 <ion-view title="Configuration" id="page8" style="background-color:#414042;">
     <ion-content padding="true" align="middle" class="has-header positive" scroll="false">
-        <h1 id="configuration-heading5" style="color:#FFFFFF;">1. Creating room & position lights</h1>
+        <h1 ng-init="name = 'John'" id="configuration-heading5" style="color:#FFFFFF;">1. Creating room & position lights</h1>
         <div d3-line id="configuration-markdown5" style="color#FFFFFF;">
         </div>
             <div>
-              <a ui-sref="menu.positionLamps" id="configuration-button2" align="middle" style=" background-color:#fce4ac" class="button">Save room</a>
+
+              <button ng-click="start()" id="klick-button" value="klick" align="middle" style=" background-color:#fce4ac" class="button">Save room</button>
                 <button id="configuration-button3" align="middle" style=" background-color:#fce4ac" class="button">Reset room</button>
+                  <a ui-sref="menu.positionLamps" id="configuration-button2" align="middle" style=" background-color:#fce4ac" class="button">Save lights</a>
             </div>
 
     </ion-content>

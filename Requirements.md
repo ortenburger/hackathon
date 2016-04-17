@@ -1,6 +1,5 @@
 Requirements:
 [ ] read weather
-[ ] store weather in cloud
 [ ] set lighttemperature to counter weather (Mood!)
 [ ] set lightcolor whether to take an umbrella (alarm with leaving flat)
 [ ] light follows the person through the flat
@@ -8,8 +7,8 @@ Requirements:
 [ ] LightWarning if CO2 is too high
 
 Backend:
-[ ] CloudRail to connect weatherdata
-[ ] CloudRail to set Philips Hue Lights
+[ ] CloudRail to connect weatherdata -> no CloudRail
+[X] CloudRail to set Philips Hue Lights -> no CloudRail
 [ ] API to frontend
 [ ] API to get VRN data (oeffentlichen)
 
