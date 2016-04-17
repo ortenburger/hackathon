@@ -6,19 +6,10 @@
         </ion-nav-buttons>
     </ion-nav-bar>
 
-    <ion-content padding="true" class="has-header">
-        <h1 id="wakeUpAlarm-heading8" style="color:#000000;">Set wake up time</h1>
-        <form class="list">
-            <h1 id="wakeUpAlarm-heading9" style="color:#000000;">Hour</h1>
-            <ion-item class="range range-positive">Range
-                <input type="range" value="50" min="0" max="100">
-            </ion-item>
-        </form>
-        <h1 id="wakeUpAlarm-heading10" style="color:#000000;">Minute</h1>
-        <form class="list">
-            <ion-item class="range range-positive">Range
-                <input type="range" value="50" min="0" max="100">
-            </ion-item>
-        </form>
+    <ion-content padding="true" align="middle" class="has-header">
+      <h1 id="wakeUpAlarm-heading8" align="middle" style="color:#FFFFFF;">Actual wake up time: </h1>
+  <h1 align="middle" style="color:#FFFFFF;">{{ selectedTime.getUTCHours() }} : {{ selectedTime.getUTCMinutes() }} </h1>
+
+      <button align="middle" style=" background-color:#fce4ac" class="button" ng-click="opentimer()"> Set my time</button>
     </ion-content>
 </ion-view>
