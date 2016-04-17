@@ -27,10 +27,16 @@ $dark:                            #444 !default;
   Modified icons to fit ionicon’s grid from original.
 */
 @font-face {
+  font-family: 'Lato';
+src: url('../css/Lato-Regular.ttf'); 
+src: url('../css/Lato-Bold.ttf') ;
+
+
   font-family: "Ionicons";
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("../lib/ionic/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("../lib/ionic/fonts/ionicons.woff?v=2.0.1") format("woff"), url("../lib/ionic/fonts/ionicons.woff") format("woff"), url("../lib/ionic/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
-  font-weight: normal;
+
+font-weight: normal;
   font-style: normal; }
 
 .ion, .ionicons,
@@ -3059,6 +3065,9 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
+
+
+
   /* 2 */ }
 
 /**
