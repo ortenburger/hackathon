@@ -1,0 +1,154 @@
+[
+    {
+        "elementID": 2318,
+        "hafasID": "2318",
+        "latitude": "49.4859327778",
+        "longName": "Feudenheim Kreuz",
+        "longitude": "8.5371155556",
+        "shortName": "FEKR"
+    },
+    {
+        "elementID": 1155,
+        "hafasID": "1155",
+        "latitude": "49.3935777778",
+        "longName": "Feuerbachstraße",
+        "longitude": "8.6864805556",
+        "shortName": "SSFS"
+    },
+    {
+        "elementID": 2129,
+        "hafasID": "2129",
+        "latitude": "49.4646027778",
+        "longName": "Feuerwache",
+        "longitude": "8.4359658333",
+        "shortName": "MHFW"
+    },
+    {
+        "elementID": 6314,
+        "hafasID": "6314",
+        "latitude": "49.534962406",
+        "longName": "Feuerwehr (Unter-Absteinach)",
+        "longitude": "8.786455838",
+        "shortName": "UAFW"
+    },
+    {
+        "elementID": 2094,
+        "hafasID": "2094",
+        "latitude": "49.4894647222",
+        "longName": "Fieskostraße",
+        "longitude": "8.3729830556",
+        "shortName": "OGFI"
+    },
+    {
+        "elementID": 1020,
+        "hafasID": "1020",
+        "latitude": "49.47424000",
+        "longName": "Filmfestival",
+        "longitude": "8.45752000",
+        "shortName": "LIFF"
+    },
+    {
+        "elementID": 1300,
+        "hafasID": "1300",
+        "latitude": "49.42199611",
+        "longName": "Finanzamt",
+        "longitude": "8.64251472",
+        "shortName": "WIFA"
+    },
+    {
+        "elementID": 3306,
+        "hafasID": "3306",
+        "latitude": "49.4600708333",
+        "longName": "Floßwörth",
+        "longitude": "8.4988572222",
+        "shortName": "NRFL"
+    },
+    {
+        "elementID": 1023,
+        "hafasID": "1023",
+        "latitude": "49.38135000",
+        "longName": "Forstquelle",
+        "longitude": "8.70632000",
+        "shortName": "BGFQ"
+    },
+    {
+        "elementID": 1128,
+        "hafasID": "1128",
+        "latitude": "49.3640191667",
+        "longName": "Forum",
+        "longitude": "8.7053883333",
+        "shortName": "EGFO"
+    },
+    {
+        "elementID": 2170,
+        "hafasID": "2170",
+        "latitude": "49.5150927778",
+        "longName": "Frankenstraße (LU)",
+        "longitude": "8.4035436111",
+        "shortName": "OPFA"
+    },
+    {
+        "elementID": 2675,
+        "hafasID": "2675",
+        "latitude": "49.4929394444",
+        "longName": "Frankenstraße (MA)",
+        "longitude": "8.5509952778",
+        "shortName": "WTFS"
+    },
+    {
+        "elementID": 5540,
+        "hafasID": "5540",
+        "latitude": "49.4627791667",
+        "longName": "Franz-Sigel-Straße",
+        "longitude": "8.4769563889",
+        "shortName": "NRSI"
+    },
+    {
+        "elementID": 2502,
+        "hafasID": "2502",
+        "latitude": "49.4495536111",
+        "longName": "Franzosenweg",
+        "longitude": "8.4604591667",
+        "shortName": "NRFZ"
+    },
+    {
+        "elementID": 6958,
+        "hafasID": "6958",
+        "latitude": "49.49771600",
+        "longName": "Freibad Willersinn",
+        "longitude": "8.39682700",
+        "shortName": "FHFW"
+    },
+    {
+        "elementID": 2583,
+        "hafasID": "2583",
+        "latitude": "49.5092897222",
+        "longName": "Freiberger Ring",
+        "longitude": "8.5406661111",
+        "shortName": "VOFR"
+    },
+    {
+        "elementID": 1267,
+        "hafasID": "1267",
+        "latitude": "49.3733847222",
+        "longName": "Freiburger Straße (HD)",
+        "longitude": "8.6880233333",
+        "shortName": "RBFS"
+    },
+    {
+        "elementID": 4113,
+        "hafasID": "4113",
+        "latitude": "49.54522381",
+        "longName": "Freiburger Straße (Weinheim)",
+        "longitude": "8.62979675",
+        "shortName": "WHFE"
+    },
+    {
+        "elementID": 2488,
+        "hafasID": "2488",
+        "latitude": "49.4595094444",
+        "longName": "Freiheitsplatz",
+        "longitude": "8.4793941667",
+        "shortName": "NRFH"
+    }
+]
