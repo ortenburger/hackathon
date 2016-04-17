@@ -1,5 +1,5 @@
 <ion-side-menus enable-menu-with-back-views="false" style="background-color:#414042;">
-    <ion-side-menu-content>
+    <ion-side-menu-content drag-content="false" >
         <ion-nav-bar class="bar-stable">
             <ion-nav-back-button></ion-nav-back-button>
             <ion-nav-buttons side="left">
@@ -8,7 +8,7 @@
         </ion-nav-bar>
         <ion-nav-view name="side-menu21"></ion-nav-view>
     </ion-side-menu-content>
-    <ion-side-menu side="left" id="side-menu21">
+    <ion-side-menu side="left" id="side-menu21" >
         <ion-header-bar class="bar-stable">
             <div class="title">Menu</div>
         </ion-header-bar>
@@ -19,6 +19,7 @@
                 <ion-item ui-sref="menu.departureAlarmVRN" menu-close="">Departure alarm VRN</ion-item>
                 <ion-item ui-sref="menu.lightMusic" menu-close="">Music lights</ion-item>
                 <ion-item ui-sref="menu.configuration" menu-close="">Configuration</ion-item>
+                <ion-item ui-sref="menu.connectToLamp" menu-close="">Connect to lamp</ion-item>
             </ion-list>
         </ion-content>
     </ion-side-menu>
