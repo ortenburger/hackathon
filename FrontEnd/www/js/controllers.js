@@ -20,8 +20,8 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('connectToLampCtrl', function($scope) {
-
+.controller('connectToLampCtrl', function($scope, hueService) {
+  $scope.hueService=hueService;
 })
 
 
