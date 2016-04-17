@@ -12,7 +12,12 @@
       <form class="list">
           <label class="item item-select">
               <span class="input-label">Select</span>
-              <select></select>
+              <select>
+                <div data-ng-repeat="i in [json.length]">
+                  <option>json1</option>
+                  <option>json2</option>
+                </div>
+              </select>
           </label>
       </form>
       <h1 id="departureAlarmVRN-heading14" style="color:#FFFFF;text-align:center;">Distance Station</h1>
