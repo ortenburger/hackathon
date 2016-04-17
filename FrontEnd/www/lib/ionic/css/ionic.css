@@ -8029,7 +8029,7 @@ input:checked + .checkbox-icon:after {
 
 .toggle.toggle-positive input:checked + .track {
   border-color: #387ef5;
-  background-color: #387ef5; }
+  background-color: #fce4ac; }
 
 .toggle.toggle-calm input:checked + .track {
   border-color: #11c1f3;
@@ -8166,10 +8166,10 @@ input:checked + .checkbox-icon:after {
   background-color: #b2b2b2; }
 
 .toggle-small .toggle-positive input:checked + .track {
-  background-color: rgba(56, 126, 245, 0.5); }
+  background-color: rgba(252, 228, 172, 0.5); }
 
 .toggle-small .toggle-positive input:checked + .track .handle {
-  background-color: #387ef5; }
+  background-color: #fce4ac; }
 
 .toggle-small .toggle-calm input:checked + .track {
   background-color: rgba(17, 193, 243, 0.5); }
