@@ -1,11 +1,11 @@
 Challanges:
-	* platform independent
+  * platform independent
 		'-> used ionics framework [X]
-	* provide webservices
+  * provide webservices
 		'-> Apache Proxy [ ]
-	* get position in room
+  * get position in room
 		'-> different approaches [ ]
-	* work around CloudRAILS
+  * work around CloudRAILS
 		'-> now without CloudRAILS [X]
-	* get nearest rnv-stations
+  * get nearest rnv-stations
 		'-> created pythonscript [X]
