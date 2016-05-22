@@ -9,9 +9,12 @@
       <h1 id="configuration-heading7" align="middle" style="color:#FFFFFF;">Connect to lamp</h1>
       <div id="configuration-markdown7" align="middle" style="color:#FFFFFF;">
           <p>First press the Button and within 30 sec the Button on the lamp-device</p>
-          <button id="configuration-button1" align="middle" style=" background-color:#fce4ac" class="button">Start Conncet</button>
+          <button id="configuration-button1" align="middle" style=" background-color:#fce4ac" ng-click="hueService.getAllLights()" class="button">Start Conncet</button>
           <!-- button button-positive -->
 
+      </div>
+      <div>
+        <input ng-value="lights"/>
       </div>
 
 

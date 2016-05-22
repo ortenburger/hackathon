@@ -38,10 +38,21 @@ ionicTimePicker.openTimePicker(ipObj1);
 
 .controller('configurationCtrl', function($scope) {
 
+
+
+      $scope.checkMComBtn = function(comment_count) {
+        var intValue = parseInt(comment_count) || 0;
+        console.log('intValue ' , intValue);
+
+        if (intValue > 0) {
+          return 1;
+        }
+      }
+
 })
 
-.controller('connectToLampCtrl', function($scope) {
-
+.controller('connectToLampCtrl', function($scope, hueService) {
+  $scope.hueService=hueService;
 })
 
 
