@@ -6,7 +6,7 @@ Usage:
 	calc_dist_station.py langitude longitude (in float)
 """
 import io
-import json
+import json      #want to write a json file
 import functools
 import sys
 from geopy.geocoders import Nominatim
